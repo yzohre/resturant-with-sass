@@ -1,0 +1,65 @@
+$color-dark:#262626;
+$color-black:#000;
+$color-primary:#d3ab55;
+$color-secondary: #bbb;
+$color-white:#fff;
+$font-dancingScript: "Dancing Script",
+'cursive';
+$font-josefinSans: "Josefin Sans",
+sans-serif;
+$font-nunito: "Nunito",
+sans-serif;
+$font-sahel: sahel;
+$font-nastaliq: Nastaliq;
+$font-vazir: vazir;
+@font-face {
+    font-family: sahel;
+    src: url("../fonts/Sahel.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Nastaliq;
+    src: url("../fonts/IranNastaliq.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'vazir';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Vazir-Bold.woff') format('truetype'), url('../fonts/Vazir-Bold.ttf'), url('../fonts/Vazir-Bold.eot');
+}
+
+@mixin flexLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textStyles {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@mixin centering($topValue) {
+    position: absolute;
+    top: $topValue;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%fullSpace {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $color-dark;
+}
